@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">       
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">
+                Desafío 1. Cifrar y Decifrar 
+                </h1>                
+                <div class="container">    
+                    <textarea id="inputText" placeholder="Escribe tu texto aquí..."  oninput="validateInput()" ></textarea>
+                    <div class="button-container">
+                        <button onclick="cifrarTexto()">Cifrar</button>
+                        <button onclick="decifrarTexto()">Decifrar</button>
+                    </div>
+                    <textarea id="outputText" placeholder="Resultado" readonly></textarea>
+                    <div class="button-container">            
+                        <button onclick="copiarTexto()">Copiar</button>
+                    </div>
+                </div>  
+               
+        </section>
+            <img class="presentacion__imagen" src="./Img/Muñeco.png" alt="Foto de Ana García desarrolando un proyecto">
+    </main>
+    <footer class="footer">
+        <p>Leidi Johana Garzon Velasquez - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
